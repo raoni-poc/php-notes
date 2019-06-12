@@ -1,0 +1,50 @@
+<?php
+/*
+Quais regras a seguir devem ser cumpridas para considerar
+correto um documento XML? [ escolha 2 ]
+
+A: Ser bem formado
+B: Ser válido
+C: Estar associado a um DTD
+D: Deve conter apenas caracteres na codificação UTF-8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: A, B

@@ -1,0 +1,40 @@
+<?php
+/*
+Como setar o formato "2017-06-15 14:59:03" de data e horário através da classe DateTime?
+
+A: date_format( $data, 'Y-m-d H:i:s');
+B: $data->format('Y-m-d H:i:s');
+C: date('Y-m-d H:i:s', $data);
+D: nenhuma das alternativas
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: B
