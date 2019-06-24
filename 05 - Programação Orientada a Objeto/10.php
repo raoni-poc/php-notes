@@ -1,0 +1,52 @@
+<?php
+/*
+ Qual das seguintes linhas de código não vai disparar o auto-carregamento da classe Nemo
+se ela não estiver definida?
+
+A: $a = new Nemo();
+B: echo Nemo::$a;
+C: class Captain extends Nemo {}
+D: $b = $a instanceof Nemo;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: D
