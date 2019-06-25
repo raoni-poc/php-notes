@@ -1,0 +1,59 @@
+Um risco de segurança comum é expôr mensagens de erro diretamente no navegador do usuário.
+Que configuração do PHP podemos desabilitar para evitar esse comportamento?
+
+A: html_display
+B: error_reporting
+C: display_errors
+D: error_log
+E: ignore_repeated_errors
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: D
+
+
+A cláusula html_display sequer existe no php.ini.
+A instrução que existe é html_errors.
+O error_reporting é utilizado para configurar o nível de severidade dos erros PHP.
+A diretiva error_log é utilizada para direcionar as mensagens de erro para um arquivo.
+A diretiva ignore_repeated_errors não fará o registro de erros quando ocorrerem no mesmo arquivo,
+na mesma linha de código.Mas não tem relação com o enunciado da questão.
+Portanto a alternativa correta é C: display_errors, que deve ser configurada como Off para evitar que
+informações críticas sejam exibidas

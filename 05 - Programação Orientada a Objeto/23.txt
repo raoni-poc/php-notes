@@ -1,0 +1,46 @@
+Quais das seguintes linhas de código NÃO irão carregar a classe Servicos via
+__autoload, se ela não estiver definida?
+
+A: $a = new Servicos();
+B: echo Servicos::$a;
+C: class Passeios extends Servicos {}
+D: $b = $a instanceof Servicos;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ R.: D

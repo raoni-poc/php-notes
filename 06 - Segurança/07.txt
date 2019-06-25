@@ -1,0 +1,50 @@
+Identifique a brecha de segurança que existe no seguinte código de exemplo?
+
+mail('ari@certificamp.com',
+'Feedback",
+'Aqui está o meu opinário.',
+"From: {$_COOKIE['email']}");
+
+A: Nenhuma das alternativas
+B: Remote Code Injection
+C: E-mail Injection
+D: Cross-Site Request Forgeries
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: C

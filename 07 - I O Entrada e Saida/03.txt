@@ -1,0 +1,54 @@
+A API de streams provê uma gama de informações sobre o fluxo de dados, mas qual
+das informações a seguir é fornecido pela função stream_get_meta_data?
+
+A: se há mais dados a serem lidos
+B: se o fluxo foi excedido ou não
+C: se o fluxo está bloqueando
+D: a quantidade de dados que passou através da corrente de dados
+E: os componentes do fluxo de dados
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: E
+
+A função stream_get_meta_data() traz todas as informações de cabeçalho
+e metadados da respectiva stream, sendo assim a resposta é letra E.

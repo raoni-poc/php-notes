@@ -1,0 +1,87 @@
+A classe minhaClasse contém o método __toString().
+$obj é uma instância de minhaClasse.
+Que comandos vão executar __toString()?
+
+A: print $obj;
+B: echo "$obj";
+C: print (string) $obj;
+D: echo '(',$obj,')';
+E: print '('.$obj.')';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: Todas alternativas irão executar o __toString()
+
+
+Embora muitos não saibam, o echo suporta vírgulas para cada argumento passado,
+diferentemente de print que requer o ponto para concatenação.
+Numa análise mais aprofundada, a título de curiosidade,
+percebe-se um ganho de performance no uso de vírgulas.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.:

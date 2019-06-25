@@ -1,0 +1,49 @@
+
+Qual das seguintes opções deve ser usada em conjunto com CASE dentro de uma
+declaração SWITCH?
+
+A: Scalar
+B: Uma expressão
+C: Boolean
+D: Todas anteriores
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: D

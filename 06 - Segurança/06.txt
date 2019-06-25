@@ -1,0 +1,50 @@
+Qual o algoritmo que a função crypt() utiliza como padrão?
+
+A: Blowfish
+B: DES
+C: MD5
+D: SHA1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: B

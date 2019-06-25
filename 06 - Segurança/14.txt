@@ -1,0 +1,55 @@
+Qual o tamanho da string retornada por
+md5(rand(), TRUE);
+
+A: Depende do valor retornado pela função rand()
+B: 32
+C: 24
+D: 16
+E: 64
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: D
+
+É sabido que a função md5() retorna sempre 32 caracteres hexadecimais,
+independente do valor de entrada.
+Porém ao passar true como segundo parâmetro na função md5(),
+ela devolve a saída em formato binário com um tamanho de 16. Portanto a resposta é D: 16.

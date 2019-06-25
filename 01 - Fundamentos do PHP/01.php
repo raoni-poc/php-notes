@@ -5,7 +5,7 @@ if("um" == 0){
     echo "Falso";
 }
 
-echo "\n------------------\n";
+echo "\n";
 
 if("um" == 5){
     echo "Verdadeiro";
@@ -13,7 +13,7 @@ if("um" == 5){
     echo "Falso";
 }
 
-echo "\n------------------\n";
+echo "\n";
 
 if("um" == null){
     echo "Verdadeiro";
@@ -21,7 +21,7 @@ if("um" == null){
     echo "Falso";
 }
 
-echo "\n------------------\n";
+echo "\n";
 
 if(0 == "0"){
     echo "Verdadeiro";
@@ -29,7 +29,7 @@ if(0 == "0"){
     echo "Falso";
 }
 
-echo "\n------------------\n";
+echo "\n";
 
 if(1 == "1"){
     echo "Verdadeiro";

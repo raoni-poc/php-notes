@@ -1,0 +1,50 @@
+Complete a seguinte declaração de modo que ela fique verdadeira.
+Em comparação com conexões HTTP, conexões HTTPS são...
+
+A: mais seguras e com melhor performance
+B: menos seguras e lentas
+C: mais seguras e lentas
+D: menos seguras e com melhor performance
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: C

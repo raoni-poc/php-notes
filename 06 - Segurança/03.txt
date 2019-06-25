@@ -1,0 +1,51 @@
+Considere uma conexão MySQLi previamente estabelecida e
+uma página contendo um formulário de busca de artigos.
+
+O código PHP que realiza a busca por palavra-chave executa
+uma query típica de consulta:
+
+SELECT * FROM artigos WHERE conteudo LIKE '%". $_POST[' busca']."%'
+
+Ao substituir o conteúdo de busca pelo código malicioso abaixo, qual medida NÃO
+é válida para evitar um ataque SQL Injection?
+
+%' UNION SELECT email, senha FROM usuarios;--
+
+A: gravar no banco de dados as senhas criptografadas com password_hash()
+
+B: sempre consultar TODOS os campos da tabela principal
+(SELECT * FROM), assim o atacante dificilmente saberá
+quantas colunas serão necessárias para igualar com a primeira
+cláusula SELECT
+
+C: aplicar a função mysqli_real_escape_string sob o SQL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: B

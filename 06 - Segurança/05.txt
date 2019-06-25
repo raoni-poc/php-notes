@@ -1,0 +1,50 @@
+Qual dos caracteres a seguir é escapado pela função escapeshellarg()?
+
+A: &
+B: "
+C: '
+D: ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: C

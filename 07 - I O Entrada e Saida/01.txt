@@ -1,0 +1,61 @@
+O que acontecerá quando executar o código a seguir,
+considerando que a diretiva allow_url_fopen está habilitada
+e o diretório /tmp tem permissões de escrita?
+
+$fp = fopen("http:// certificamp.com", "r");
+file_put_contents("/tmp/ conteudo.txt", $fp);
+echo stream_get_contents("/tmp/conteudo.txt");
+
+A: Mostra o conteúdo do site certificamp.com
+B: Error: stream_get_contents aceita um recurso para manipulação do arquivo e
+   não o caminho dele
+C: Fatal error: sem um argumento adicional de contexto, não é possível utilizar
+   fopen para URLs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: B
+
+Funções qaue iniciam por f*() e stream_*() trabalham com ponteiros para os arquivos.
+
+Na quarta linha observe que a função stream_get_contents() passa um
+nome de arquivo como parâmetro, gerando erro.
+
+Portanto a alternativa B é a resposta correta.
+

@@ -1,0 +1,47 @@
+Que código pode ser usado para criar um objeto da classe MyClass em $a?
+
+A: $a = new ReflectionObject("MyClass");
+B: $c = new ReflectionClass("MyClass"); $a = $c->newInstance();
+C: $a = ReflectionMethod::invoke( array(" MyClass", "__construct"));
+D: $m = new ReflectionMethod(" MyClass", "__construct"); $a = $m->invoke(null);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: B

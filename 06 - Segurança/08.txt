@@ -1,0 +1,58 @@
+Que proteção você usaria para filtrar o segundo parâmetro da
+função `mail()` para impedir o ataque de injeção de e-mail?
+
+A: O segundo parâmetro é seguro. Nenhuma proteção é exigida
+B: Escapar o ' e "
+C: Escapar os caracteres \r\n de CRLF
+D: Converter em boleano
+E: Nenhuma das anteriores
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: A
+
+Se estivéssemos falando sob o contexto do PHP 5.3, a alternativa C seria a correta,
+pois na época o segundo parâmetro não recebia tratamento adequado e abria essa brecha
+de segurança.
+
+Analisando sob o ponto de vista do PHP 7.1 (versão vigente do exame),
+a alternativa correta é a A, pois a função mail() já
+filtra automaticamente os dados de entrada.

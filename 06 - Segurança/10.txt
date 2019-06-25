@@ -1,0 +1,73 @@
+Em transações HTTPS, como as URLs e query strings são passadas do browser para o servidor web?
+
+A:  Ambas são passadas em texto puro e toda a transação subsequente será encriptada
+B:  Ambas são encriptadas
+C:  A URL mantém-se em texto puro, enquanto que a query strings é encriptada
+D:  A URL é encriptada, enquanto que a query strings é passada em texto puro
+E:  Para garantir a sua encriptação, a query string é convertida em um cabeçalho
+    e passada junto com a informação via POST
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: B
+
+1. Primeiramente vamos distinguir o que é uma URL de uma query string.
+Na requisição teremos o endereço:
+http://www.certificamp.com/atendimento/cronometro.php?id=19&acao=liga
+
+ComoURL teremos a porção
+
+http://www.certificamp.com/atendimento/cronometro.php,
+
+sendo que
+
+id=19&acao =liga
+
+é a query string.
+
+Quando uma transação HTTPS ocorre, o navegador e o servidor imediatamente
+negociam um mecanismo de criptografia para que todos os dados subseqüentes
+não sejam transmitidos em texto claro (como ocorre nas requisições HTTP convencionais),
+incluindo a URL e a sequência de parâmetros.
+
+Portanto a resposta correta é B: Ambas são encriptadas.

@@ -1,0 +1,50 @@
+Qual encriptação é recomendada caso sua aplicação necessite
+armazenar credenciai s de banco de dados?
+
+A: Criptografia de chave simétrica
+B: Hashing
+C: Caesar cipher
+D: ROT13
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: A

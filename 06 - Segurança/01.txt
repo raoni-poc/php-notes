@@ -1,0 +1,50 @@
+<?php
+
+/*
+Que função pode ser usada para validar se uma determinada cadeia consiste
+em apenas letras e números?
+
+A: ctype_alnum()
+B: cytpe_alpha()
+C: ctype_letterdigit()
+D: ctype_xdigit()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R .: A

@@ -1,0 +1,7 @@
+O termo "instanceof" é um exemplo de?
+
+A: booleano
+B: operador
+C: função
+D: um construtor da linguagem
+E: uma classe mágica

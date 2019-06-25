@@ -1,0 +1,60 @@
+Você está escrevendo uma aplicação PHP que será utilizada por milhares de pessoas.
+É preciso armazenar as credenciais do banco de dados de forma segura, mas também
+garantir que a aplicação seja de fácil deploy. Qual é a melhor forma de fazê-lo?
+
+A: Guardar as credenciais em arquivo .txt dentro da raiz do servidor web
+B: Guardar as credenciais em arquivo .inc dentro da raiz do servidor web
+C: Guardar as credenciais em arquivo .php dentro da raiz do servidor web
+D: Guardar as credenciais em arquivo .php fora da raiz do servidor web
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: C
+
+Armazenar as credencias de acesso ao SGBD dentro de arquivo texto e .inc
+é um péssima ideia, pois geralmente o servidor não trata esse tipo de arquivo
+- sendo totalmente exposto quando acessados diretamente via navegador.
+
+Daí vem a polêmica: armazenar num arquivo PHP dentro ou fora da raiz do servidor web?
+Considerando o enunciado, observe que ele enfatiza a facilidade de implantação.
+Por essa determinação dizemos que é preferível guardar as credenciais em arquivo .php
+DENTRO da raiz do servidor web, pois muitas vezes não temos acesso a diretórios
+fora da raiz do servidor, portanto a resposta correta é C.

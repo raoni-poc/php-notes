@@ -1,0 +1,47 @@
+Digamos que seu código tenha a função __autoload() implementada ou mesmo outra função
+registrada com spl_autoload_register(). Ao tentar usar um trait que ainda
+não tenha sido carregado, o auto carregamento será invocado e o trait disponibilizado?
+
+A: Será carregado, mas gera um alerta de Warning
+B: Não será carregado, pois traits não invocam o __autoload()
+C: Gera um Fatal error
+D: Normalmente como na autocarga de classes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: D

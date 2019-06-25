@@ -1,0 +1,62 @@
+Qual das seguintes técnicas de filtragem previne todos os ataques as vulnerabilidades
+cross-site scripting (XSS)?
+
+A: Remover todas as ocorrências da string <script>
+B: Remover todas as ocorrências da string javascript
+C: Remover todas as ocorrências da string %3Cscript%3E
+D: Habilitar magic_quotes_gpc
+E: Nenhuma das alternativas anteriores
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: E
+
+Remover a tag <script> e expressões como javascript ajudam,
+mas não exime todos os ataques XSS.
+
+Outras strings também são potencialmente maliciosas como a tag HTML <meta> e injeção de CSS
+através de url() e expression().
+
+Quanto a diretiva magic_quotes_gpc ela foi removida do PHP 5.4 e consistia
+no processo de inserção automática de caracteres de escape (\)
+em todos os dados vindos por GET, POST e COOKIES (GPC).
+
+Portanto a resposta correta é E: Nenhuma das alternativas anteriores.

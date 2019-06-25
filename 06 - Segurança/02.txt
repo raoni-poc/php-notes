@@ -1,0 +1,50 @@
+Como você deveria rastrear erros de um website em produção?
+
+A: Habilitando a diretiva display_errors
+B: Habilitando a diretiva log_errors
+C: Tendo um manipulador de exceção para todo o site
+D: Configurando a diretiva error_reporting para E_ALL & ~ E_NOTICE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: B

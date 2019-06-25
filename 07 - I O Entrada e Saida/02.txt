@@ -1,0 +1,55 @@
+Considerando a declaração baixo, o quê ela significa?
+
+$f = fopen("compress.zlib://pacote.txt.gz", "wb");
+
+A: abre o arquivo pacote.txt.gz e lê seu conteúdo
+B: qualquer dado que escrever em $f posteriormente será comprimido com GZip
+   e armazenado em pacote.txt.gz
+C: gera um erro, pois o modo de operação "wb" (binary write) é ilegal para esse
+   tipo de recurso
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: B
+
+Qualquer operação no handler $f será comprimida e empacotada em arquivo.
