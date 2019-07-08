@@ -1,0 +1,75 @@
+Considere a seguinte tabela contendo vários registros e assuma que o banco de da
+dos suporte transações. Qual o resultado do código PHP a seguir?
++----+--------+------------------------+
+| id | nome   | email                  |
++----+--------+------------------------+
+| 1 | Ari     | ari@ certificamp.com   |
+| 2 | Neto    | neto@ certificamp.com  |
+| 3 | Paloma  | paloma@ certificamp.com|
+| 5 | Laci    | laci@ certificamp.com  |
++----+--------+------------------------+
+(Assuma que a conexão PDO está devidamente estabelecida)
+
+$dsn = 'mysql:host = localhost; dbname = bancodedados';
+$usuario = 'login';
+$senha = 'senha';
+$pdo = new PDO( $dsn, $usuario, $senha);
+
+try {
+    $pdo->exec("INSERT INTO usuarios (id, nome, email) VALUES (6, 'Ariel',
+    'ariel@ certificamp.com')");
+    $pdo->beginTransaction();
+    $pdo->exec("INSERT INTO usuarios (id, nome, email) VALUES (7, 'Laura',
+    'laura@certificamp.com')");
+     throw new Exception();
+} catch (Exception $e) {
+  $pdo->rollBack();
+}
+
+A: O usuario 'Ariel' será inserido, mas o usuário 'Laura' não
+B: Ambos usuários ('Ariel' e 'Laura') serão inseridos
+C: Nenhum usuário ('Ariel' e 'Laura') serão inseridos
+D: O usuario 'Ariel' não será inserido, mas o usuário 'Laura' sim
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: ?

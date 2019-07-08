@@ -1,0 +1,65 @@
+Você quer permitir que seus usuários enviem código HTML em um formulário, sendo que
+ele será exibido como código, sem afetar o layout da página. Quais funções você aplicaria
+ao texto, ao exibi-lo adequadamente? [Escolha 2]
+
+A: strip_tags()
+B: htmlentities()
+C: htmltidy()
+D: htmlspecialchars()
+E: showhtml()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: B, D
+
+
+As respostas corretas são B: htmlentities() e D: htmlspecialchars(), pois ambas trocam entidades HTML
+por seus equivalentes (exceto o caracter de espaço). Ex.:
+
+$n = htmlentities("<a href ='t.php' title ='Título'>Canção</a>");
+echo $n; //&lt;a href =&#039;test&#039;&gt;Test&lt;/a&gt;
+
+Ari Stopassola Junior. Preparatório para a certificação PHP (Locais do Kindle 6383-6389). leanpub.com.

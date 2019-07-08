@@ -1,0 +1,91 @@
+O algoritmo pede que um número qualquer seja preenchido com zeros à esquerda enquanto não alcançar 10
+dígitos.
+
+Ex.: 4 transforma-se em 0000000004, 6091 em 0000006091 e assim por diante.
+
+Assinale a alternativa correta, identificando se as funções abaixo são verdadeiras ou falsas:
+
+( ) str_pad($numero, 10, "0", STR_PAD_LEFT);
+( ) sprintf("%010d", $numero);
+
+A: V e V
+B: V e F
+C: F e V
+D: F e F
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: A
+
+Resposta correta é A, pois ambas são verdadeiras.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

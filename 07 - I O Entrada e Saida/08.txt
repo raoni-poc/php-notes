@@ -1,0 +1,52 @@
+Qual dos seguintes trechos de código NÃO vai escrever o exato conteúdo do arquivo
+"origem.txt" para "destino.txt"?
+
+A: file_put_contents("destino.txt", fopen(" origem.txt", "r"));
+B: file_put_contents("destino.txt", readfile(" origem.txt"));
+C: file_put_contents("destino.txt", join( file(" origem.txt", FILE_IGNORE_NEW_LINES), "\n"));
+D: file_put_contents(" destino.txt", file_get_contents("origem.txt"));
+E: $ handle = fopen(" destino.txt", "w +");
+   fwrite( $ handle, file_get_contents("origem.txt")); fclose($handle);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: B
+
+Segundo o enunciado, alternativa correta é o snippet de código que não deve funcionar,
+portanto alternativa B é a opção que deve ser marcada.
+A função readfile() devolve o número de bytes contidos no arquivo origem.txt (e não o seu conteúdo).

@@ -1,0 +1,88 @@
+Qual é o método recomendado para copiar dados entre dois arquivos abertos?
+
+A: copy($arquivo_origem, $arquivo_destino);
+B: copy($arquivo_destino, $arquivo_origem);
+C: stream_copy_to_stream($arquivo_origem, $arquivo_destino);
+D: stream_copy_to_stream($arquivo_destino, $arquivo_origem);
+E: stream_bucket_prepend($arquivo_origem, $arquivo_destino);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: C
+
+Primeiramente observe que o enunciado menciona “arquivos abertos”.
+Logo, significa que estamos lidando com recursos, então o mais indicado é utilizarmos funções de streams.
+Sobram as alternativas C e D, mas a assinatura da função D está incorreta (a ordem dos parâmetros é invertida).
+O correto é C: stream_copy_to_stream($arquivo_origem, $arquivo_destino).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.:

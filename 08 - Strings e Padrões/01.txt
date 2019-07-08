@@ -1,0 +1,66 @@
+Considerando as variáveis $a e $b como strings,
+qual a saída do seguinte código PHP?
+
+echo ($a == $ b) * strcmp($a, $b);
+
+A: 0
+B: 1
+C: Não é possível determinar sem conhecer os valores de $a e $b
+D: Parse error
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: A
+
+
+O resultado da comparação ($a == $b) utilizando o operador == é bool(false)
+quando forem diferentes, que é convertido em 0.
+
+Qualquer valor multiplicado por zero, continua zero. E quando forem iguais,
+essa comparação retorna bool(true) que traduz-se em 1,
+
+mas daí a comparação strcmp($a, $b) é quem devolve 0, mantendo o 0 como resultando final
+- independente dos valores de $ a e $ b. Consequentemente a alternativa correta é A.
+
+Aa função strcmp() quando as strings forem iguais, retorna 0.
+Se a primeira string for “maior” que a segunda, devolve um inteiro positivo (>0).
+Se a primeira string for “menor” que a segunda, devolve um inteiro negativo (<0).

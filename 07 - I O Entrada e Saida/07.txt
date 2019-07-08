@@ -1,0 +1,57 @@
+Qual o transporte de rede abaixo não é suportado pelo PHP?
+
+A: tcp
+B: udp
+C: udg
+D: pdc
+E: unix
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: D
+
+O PHP suporta inúmeros protocolos de transporte de redes como TCP, UDP, SSL, TLS, Unix e UDG.
+Para averiguar a lista completa na sua instalação PHP, use stream_get_transports().
+Assim sendo a opção não suportada é D: pdc.
+PDC significa Personal Digital Cellular Telecommunication System.
+
+

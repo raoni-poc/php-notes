@@ -1,0 +1,69 @@
+Considere $conexao uma instância de PDO, devidamente conectada no banco de dados.
+Analise o seguinte trecho de código:
+
+$conexao->exec("INSERT INTO clientes (nome) VALUES ('Ari')");
+$conexao->beginTransaction();
+$conexao->exec("INSERT INTO clientes (nome) VALUES ('Ariel')");
+
+O que podemos afirmar como verdadeiro?
+
+A: as duas querys SQL foram executadas com êxito
+B: nenhuma foi executada, pois o método adequado é query() ao invés de exec()
+C: somente o registro "Ari" foi adicionado na tabela clientes
+D: somente o registro "Ariel" foi adicionado na tabela clientes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: C
+
+O método beginTransaction() da classe PDO desabilita o autocommit. Isso significa que todas as
+transações com o BD serão efetivadas quando explicitamente o desenvolvedor invocar o método commit().
+
+O commit() não consta no código, consequentemente o segundo INSERT não será executado.
+Portanto a alternativa correta é C: somente o registro "Ari" foi adicionado na tabela clientes,
+já que nessa primeira query o autocommit estava ligado, então toda execução é realizada no ato.

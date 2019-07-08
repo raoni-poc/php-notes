@@ -1,0 +1,55 @@
+Em quantos elementos o array $pedacos irá conter depois que essa linha de código for executada?
+
+$pedacos = explode("/", "///");
+
+A: 3
+B: 5
+C: 0
+D: 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: D
+
+Resposta é D: 4, pois a função explode() entende que há 4 porções
+entre as barras /, mesmo que vazias.
+Importante lembrar que o conteúdo no início e fim da string também são contabilizados.
+

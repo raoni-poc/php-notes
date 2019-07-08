@@ -1,0 +1,36 @@
+Qual destas declarações sobre PDO não é verdadeira?
+
+A: PDO suporta internamente Large Objects (LOBs).
+B: Os placeholders (espaços reservados) em declarações preparadas precisam ser nomeados.
+C: Quando algo dá errado, PDO pode lançar uma instância de sua própria classe de exceção.
+D: PDO não emula uma funcionalidade que inexista no banco de dados.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: B
+
+Grande objetos48, como volumes enormes de texto e arquivos binários, também podem ser armazenados
+ via PDO. Então a alternativa A é verdadeira e não condiz com o enunciado.
+ Perceba que ele pergunta qual é a alternativa falsa.
+
+O controle de exceções em PDO pode ser tratado através de uma classe específica chamada PDOException,
+então a alternativa C também é verdadeira.
+
+A classe PDO não emula um recurso que porventura o banco de dados em questão não possua,
+então a opção D também é verdadeira.
+
+E os placeholders, em declarações preparadas, não precisam ser nomeados quando usados via ?
+(sinal de interrogação). Então a alternativa B é inválida.

@@ -1,0 +1,59 @@
+O que será exibido ao executar a seguinte função?
+
+printf('%010.6f', 22);
+
+A: 22
+B: 22.00
+C: 022.000000
+D: 22.000000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: C
+
+
+Apresenta o número 22 através de 10 caracteres, com preenchimento de zeros a esquerda.
+
+http://php.net/manual/pt_BR/function.sprintf.php.
+
+O especificador de tipo f diz que o argumento deve ser tratado como um float,
+nesse caso com 6 casas decimais. Então a resposta é C: 022.000000.
+

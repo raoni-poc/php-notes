@@ -1,0 +1,55 @@
+Que partes do texto serão correpondidas pela expressão regular?
+
+$texto = <<<EOT
+Pia tem pinto que toca piano que muito pinga
+EOT;
+
+preg_match_all('@p.n[tg].@', $texto, $correspondecias);
+print_r($correspondecias);
+
+A: pia pinto piano pinga
+B: pinto piano pinga
+C: pinto pinga
+D: pia pinto piano
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: C
+
+A expressão regular @p.n[ tg].@ está devidamente delimitada por @ e utiliza apropriadamente
+os meta-caracteres.
+
+Assim sendo, a alternativa correta é C: pinto pinga, pois as demais palavras não seguem a
+mesma combinação.
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+Transações de Banco de Dados garantem:
+
+A: performance
+B: disponibilidade
+C: consistência
+D: integridade
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: C

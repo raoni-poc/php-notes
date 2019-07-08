@@ -1,0 +1,54 @@
+Quais das alternativas abaixo são verdadeiras a respeito do contexto de streams? [escolha 2]
+
+A: O contexto pode modificar ou melhorar o comportamento de um stream
+B: O contexto indica a qual sessão o stream pertence
+C: O contexto é um conjunto de parâmetros e opções específicas do fluxo de stream
+D: Os contextos são criados com a função stream_context();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: A, C
+
+A função stream_context(), mencionada na alternativa D:, não existe - o que existe é a função stream_context_create().
+Outra opção que não faz sentido é a alternativa B, que menciona as sessões.
+Portanto as respostas corretas são: A e C.

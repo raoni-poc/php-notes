@@ -1,0 +1,53 @@
+Você necessita retornar um único caractere de um dado ponteiro de
+arquivo em um arquivo aberto, mas você não sabe o tamanho do arquivo.
+Qual das seguintes funções você usará para sair do laço ao chegar no fim do arquivo?
+
+A: feof()
+B: fflush()
+C: fseek()
+D: fnmatch()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: A
+
+A opção correta é A: feof(), pois essa função testa o handler vasculhando pelo fim do arquivo.
+Mais detalhes em: http://php.net/feof.

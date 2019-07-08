@@ -1,0 +1,58 @@
+Quais das expressões regulares a seguir identificam adequadamente o texto 'Rumo à certificação PHP'?
+
+$texto = 'Rumo à certificação PHP';
+$regexp = '______________________';
+$match = array();
+echo preg_match($regexp, $texto, $ match);
+
+[ escolha duas alternativas ]
+
+A: /Rumo à certificação [HP]/
+B: /Rumo à certificação [HP]*/
+C: /Rumo à certificação P{2} H{1}/
+D: /Rumo à certificação php/
+E: /$Rumo à certificação PHP/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: B, D
+
+A alternativa A tenta localizar o caracteres H ou P. Ele até encontrará o termo Rumo à
+certificação P, mas faltará o HP final. A alternativa C vai confrontar Rumo à certificação PPH,
+nessa ordem, pois utiliza os quantificadores.
+A opção E utiliza o $ como delimitador, vasculhando a partir do fim, que não condiz.
+Portanto as alternativas corretas são B e D,
+lembrando que o metacaracter i indica case-insensitive,
+sendo asim php (minúsculo) bate com o PHP (maiúsculo).

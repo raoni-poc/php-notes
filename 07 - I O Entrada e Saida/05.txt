@@ -1,0 +1,54 @@
+Qual opção vai configurar o tempo de espera (timeout) de leitura da stream para
+10 segundos?
+
+A: ini_set("default_socket_timeout", 10);
+B: stream_read_timeout($stream, 10);
+C: Especificar o timeout como 5º parâmetro na função fsockopen(),
+   utilizada para abrir a stream
+D: stream_set_timeout($stream, 10);
+E: Nenhuma das alternativas
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: D
+
+Resposta é D: stream_set_timeout($stream, 10);.
+
+

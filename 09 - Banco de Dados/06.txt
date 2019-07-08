@@ -1,0 +1,52 @@
+Qual dos seguintes métodos são usados para buscar dados de uma declaração PDO? [escolha 3]
+
+A: fetchColumn()
+B: fetchObject()
+C: fetch()
+D: fetchClass()
+E: fetchRow()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: A, B, C
+
+Os métodos fetchClass() e fetchRow() simplesmente não existem na classe PDO50.

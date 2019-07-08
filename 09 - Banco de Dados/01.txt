@@ -1,0 +1,75 @@
+Dada as tabelas chamadas "nomes" e "emails", respectivamente:
+
++----+--------+
+| id | nome   |
++----+--------+
+| 1  | Ari    |
+| 2  | Neto   |
+| 3  | Paloma |
+| 4  | Junior |
+| 5  | Laci   |
++----+--------+
+
++----+------------------------+
+| id | email                  |
++----+------------------------+
+| 1  | ari@ certificamp.com   |
+| 3  | paloma@ certificamp.com|
+| 5  | laci@ certificamp.com  |
+| 7  | ariel@ certificamp.com |
+| 9  | ariane@ certificamp.com|
++----+------------------------+
+
+Quantas linhas serão retornadas pela seguinte consulta?
+
+SELECT nomes.nome, emails.email FROM nomes LEFT JOIN emails ON emails.id = nomes.id
+
+A: 3
+B: 5
+C: 9
+D: 10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: B
+
+A consulta LEFT JOIN prioriza a tabela da “esquerda”,
+àquela que foi referenciada primeiro.
+Ou seja: permite que a tabelas nomes retorne linhas mesmo que
+não haja equivalência na outra tabela (emails).
+
+O retorno da consulta será 5 tuplas,
+
++--------+------------------------+
+| nome   | email                  |
++--------+------------------------+
+| Ari    | ari@certificamp.com    |
+| Neto   | NULL                   |
+| Paloma | paloma@certificamp.com |
+| Junior | NULL                   |
+| Laci   | laci@certificamp.com   |
++--------+------------------------+
+

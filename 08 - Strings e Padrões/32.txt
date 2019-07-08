@@ -1,0 +1,60 @@
+Como utilizar um trecho de código HTML para ser usado como pattern numa Expressão Regular?
+
+A: preg_split
+B: preg_quote
+C: ereg_replace
+D: strip_tags
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: B
+
+Sabemos que determinados caracteres tem efeitos específicos na construção de uma expressão regular,
+chamados de metacaracteres, como é o caso de: . \ + * ? [ ^ ] $ ( ) { } = ! < > | :.
+
+Ao confrontar um padrão que possua conteúdo HTML, prontamente teremos um comportamento inapropriado
+pois as tags são formadas por caracteres < e >, bem como o caracter de = que aparece eventualmente
+em meio as tags. Então é imprescindível “escapar” tais símbolos para evitar o match indesejado.
+
+Uma função específica para realizar esse tipo de tarefa é a preg_quote() que escapa
+todos os caracteres que possuem sintaxe no contexto de expressões regulares.

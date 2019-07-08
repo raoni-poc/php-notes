@@ -1,0 +1,52 @@
+Você deseja obter o 3º caracter da string contida na variável $teste.
+Qual das seguintes possibilidades abaixo funcionariam? [Escolha 2]
+
+A: echo $teste(3);
+B: echo $teste[2];
+C: echo $teste(2);
+D: echo $teste{2};
+E: echo $teste{3};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: B, D
+
+As opções A e C tentam invocar uma função dinâmica e geram um Fatal error. Call to undefined function.
+A alternativa E pega o 4º caracter, pois indica o índice 3 (zero-based).
+Então as alternativas corretas são: B: echo $teste[2]; e D: echo $teste{2};.

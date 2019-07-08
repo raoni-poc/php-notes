@@ -1,0 +1,70 @@
+Observe o conteúdo UTF-8 que será igualado com uma expressão regular:
+
+$conteudo = '6789, áéíóú äëïöü';
+echo preg_match('/^\d{ 4},[\s\p{L}]+$/', $ conteudo);
+
+Ao confrontar caracteres especiais na codificação UTF-8, a expressão regular
+tende a falhar (retornando false).
+
+Qual a flag, colocada após o delimitador de término da expressão regular, que trata
+caracteres especiais fazendo com que essa correspondência seja verdadeira?
+
+A: s
+B: u
+C: g
+D: i
+E: x
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: B
+
+Desde a versão 5.1 do PHP, foi incorporado sequências pré-definidas de caracteres.
+São elas:
+\p{xx} caracter com a propriedade {xx}
+\P{xx} caracter sem a propriedade {xx}
+\X sequência unicode estendida
+
+Onde {xx} é o tipo de sequência de caracteres como por exemplo: \p{Sm} para símbolos matemáticos,
+\p{Lu} para letras maiúsculas (upper case) e várias outras possibilidades
+
+http://php.net/manual/pt_BR/regexp.reference.unicode.php.
+
+Ao executarmos o código, a expressão regular ^\d{ 4},[\s\ p{L}]+$ não faz a match pois a sequência
+\p{L} que deveria casar com qualquer caractere áéíóúäëïöü não surtirá efeito.
+
+Isso ocorre pois os símbolos acentuados pertencem ao UTF-8, consequentemente necessitamos de
+um modificador especial https://secure.php.net/manual/pt_BR/reference.pcre.pattern.modifiers.php.
+
+O modificador u confere que strings sejam tratadas como charset UTF-8.
+Sendo assim a resposta correta é B: u. HEREDOC e NOWDOC
