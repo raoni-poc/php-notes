@@ -1,0 +1,56 @@
+Dado o seguinte array:
+
+$a = array('Ari', 4 => 'Paloma', 'Neto');
+
+Que opção me fornece o terceiro elemento do array?
+
+A: echo $a[3];
+B: echo array_values($a, 3);
+C: echo $a[5];
+D: $r = array_reverse($a, true);  echo $r[0];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: C
+
+Nessa pergunta a alternativa correta é C: echo $a[5];.
+
+Mesmo o array contendo apenas três elementos, nada impede dos índices serem maiores
+que seu próprio tamanho.
+
+O primeiro elemento Ari é automaticamente associado a chave 0,
+Paloma assume o índice 4 (pois foi explicitamente atribuido),
+já o valor Neto assume a próxima key disponível, que é a posição 5.

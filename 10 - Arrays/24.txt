@@ -1,0 +1,59 @@
+Qual é a forma mais eficiente para determinar se uma chave está presente em um array,
+assumindo que o array não tem valores nulos?
+
+A: in_array('key', array_keys($a))
+B: isset($a['key'])
+C: array_key_exists('key', $a)
+D: Nenhuma das alternativas
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: B
+
+As alternativas A, B e C funcionam, diante do enunciado. A pergunta é: qual o mais performático?
+
+Sabe-se que a função isset() é bastante eficiente, pode-se realizar um benchmark simplório com
+microtime para averiguar.
+
+A instrução isset($a[5]); leva menos tempo de execução e,
+portanto, mais rápida que a demais opções. Então a resposta será a alternativa B:.

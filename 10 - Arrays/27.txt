@@ -1,0 +1,91 @@
+Qual função pode reverter a ordem dos valores de um array,
+preservando os índices?
+
+A: array_flip()
+B: array_reverse()
+C: rsort()
+D: krsort()
+E: array_multisort()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: B
+
+A resposta é B: array_reverse(), desde que o segundo parâmetro seja true. Ex.:
+
+$array = array("Ari", 7.1, array(" ZCE"," ZCPE"));
+$reverso = array_reverse($array);
+$preservado = array_reverse($array, true);
+
+print_r($array);
+print_r($reverso);
+print_r($preservado);
+
+Array
+(
+   [0] => Ari
+   [1] => 7.1
+   [2] => Array
+          (
+              [0] => ZCE
+              [1] => ZCPE
+          )
+)
+
+Array
+(
+    [0] => Array
+           (
+                [0] => ZCE
+                [1] => ZCPE
+           )
+    [1] => 7.1
+    [2] => Ari
+)
+
+Array
+(
+    [2] => Array
+          (
+               [0] => ZCE
+               [1] => ZCPE
+           )
+    [1] => 7.1
+    [0] => Ari
+)

@@ -1,0 +1,53 @@
+Que classe SPL implementa um armazenamento de tamanho fixo?
+
+_____________ (campo aberto)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: SplfixedArray
+
+Quando tivermos uma implementação que dependa de um array de tamanho fixo,
+convém utilizarmos a classe SplfixedArray já que é mais eficiente do que o uso
+de array PHP nativo. Deve ser digitado no campo a resposta SplfixedArray.

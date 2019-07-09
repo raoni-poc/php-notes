@@ -1,0 +1,59 @@
+Qual dos seguintes interfaces classes da SPL estende a interface Iterator padrão
+e permite a recuperação de um item específico a partir do armazenamento interno de dados?
+
+A: ArrayAccess
+B: SeekableIterator
+C: RecursiveIteratorIterator
+D: FilterIterator
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Primeiramente temos que lembrar que somente a classe SeekableIterator,
+RecursiveIteratorIterator e FilterIterator pertencem a SPL (Standard PHP Library),
+e portanto ArrayAccess está descartada.
+
+Para contextualizar, ArrayAccess é uma interface que provê o acesso a objetos como se fossem arrays.
+A classe RecursiveIteratorIterator percorre arrays multi-dimensionais, iterando como árvores de dados.
+A classe FilterIterator é usada para filtrar itens devolvidos na iteração.
+A classe SeekableIterator estende a interface Iterador padrão e adiciona o método seek() que
+proporciona a capacidade de recuperar um item específico de uma fonte de dados interna.
+Mais informações em http://php.net/manual/pt_BR/book.spl.php.
