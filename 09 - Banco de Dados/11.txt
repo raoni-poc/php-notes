@@ -1,0 +1,55 @@
+A função mysqli_affected_rows() pode ser usada para executar quais das seguintesações?
+[escolha 2]
+
+A: obter o número de linhas que são afetados após o COMMIT em uma transação
+B: obter o número de linhas que são afetados pela declaração INSERT
+C: obter o número de linhas que são afetados pela declaração SELECT
+D: obter o número de linhas que são afetados pela declaração UPDATE
+E: obter o número de linhas em um conjunto de resultados
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: B, D
+
+Embora seja considerada uma questão fácil, essa questão pode gerar uma série de dúvidas.
+Ao consultar a documentação oficial no endereço < www.php.net > teremos a informação de que
+a função mysqli_affected_rows() retorna o número de linhas afetadas pela ultima consulta
+INSERT, UPDATE, REPLACE ou DELETE.
+
+Portanto B e D são as alternativas corretas.

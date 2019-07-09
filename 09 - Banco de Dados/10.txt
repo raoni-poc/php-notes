@@ -1,0 +1,76 @@
+Considere os seguintes dados de tabela e o código PHP, além de que o banco de dados
+suporte transações.
+A tabela chama-se "usuarios" com chave primária "id". Assuma que há uma conexão PDO
+devidamente estabelecida.
+
+$dsn = 'mysql:host = localhost; dbname = zcpe';
+$login = 'root';
+$senha = 'senha';
+$pdo = new PDO($dsn, $login, $senha);
+
+try {
+    $pdo->exec("INSERT INTO usuarios (id, name, email)
+    VALUES (6, 'Renato', 'renatomefidf@gmail.com')");
+
+    $pdo->begin();
+
+    $pdo->exec("INSERT INTO usuarios (id, name, email) VALUES (7, 'Thiago', 'thiagoluismo@gmail.com')");
+    throw new Exception;
+    }
+    catch (Exception $e) {
+    $pdo-> rollBack();
+    }
+
++----+--------+------------------------+
+| id | nome | email |
++----+--------+------------------------+
+| 1 | Ari | ari@ certificamp.com |
+| 2 | Laci | laci@ certificamp.com |
+| 3 | Neto | neto@ certificamp.com |
+| 5 | Paloma | paloma@ certificamp.com |
++----+--------+------------------------+
+
+Qual é o resultado?
+
+A: O usuário "Renato" será inserido, mas o usuário "Thiago" não
+B: Os usuários "Renato" e "Thiago" serão inseridos
+C: Nem o usuário "Renato" e nem "Thiago" serão inseridos
+D: O usuário "Renato" não será inserido, mas o usuário "Thiago" será
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: A
+
+Observe que a primeira chamada do método exec() não está encapsulada numa transação.
+Como não há erros de sintaxe, nem infringe alguma constraint de banco de dados,
+tal query será executada normalmente - inserindo o “Renato” na tabela usuarios.
+
+Perceba que o segundo SQL está confinado em uma transação, disparado através do método begin().
+Antes que houvesse um commit() foi invocado deliberadamente uma exceção (linha throw new Exception).
+Essa ação foi capturada pela instrução catch que tratou de desfazer, através do método rollBack(),
+a inserção de “Thiago” na tabela usuarios.
+
+Portanto a alternativa correta será a letra A: O usuário "Renato" será inserido, mas o usuário "Thiago" não.

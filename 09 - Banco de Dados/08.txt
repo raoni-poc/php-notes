@@ -1,0 +1,75 @@
+Considere a seguinte tabela no banco de dados. O nome da tabela é "usuarios" com a chave primária "id":
+
++----+--------+------------------------+
+| id | nome   | email                  |
++----+--------+------------------------+
+| 1  | Ari    | ari@ certificamp.com   |
+| 2  | Laci   | laci@ certificamp.com  |
+| 3  | Neto   | neto@ certificamp.com  |
+| 5  | Paloma | paloma@ certificamp.com|
++----+--------+------------------------+
+
+Ao executar o código PHP abaixo, qual será a saída?
+
+$dsn = 'mysql:host = localhost; dbname = zcpe';
+$login = 'root';
+$senha = 'senha';
+$pdo = new PDO($dsn, $login, $senha);
+$cmd = "SELECT nome, email FROM usuarios LIMIT 1";
+$stmt = $pdo->prepare($cmd);
+$stmt->execute();
+$result = $stmt->fetchAll(PDO::FETCH_BOTH);
+$linha = $result[0];
+print_r($linha);
+
+A: O valor de $linha é 'array(0 => 'Ari', 1 => 'ari@ certificamp.com')'.
+B: O valor de $linha é 'array('nome' => 'Ari', 'email' = > 'ari@certificamp.com')'.
+C: O valor de $ linha é
+   'Array ([nome] => Ari [0]=> Ari [email]=>ari@certificamp.com [1]=>ari@certificamp.com ).
+D: O valor de $linha é 'array(' Ari' = > 'ari@certificamp.com')'.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: C
+
+
+
+
+
+
+O método fetchAll() da classe PDOStatement recebe, como primeiro argumento, o estilo de busca a
+ser utilizado. Você pode optar por trazer os dados em um result set onde o índice é o nome do
+campo (PDO:: FETCH_ASSOC) ou a ordem em que os campos foram consultados (PDO:: FETCH_NUM).
+
+A questão utiliza uma outra constante chamada PDO::FETCH_BOTH que traz o resultado da consulta
+associando em ambos estilos: via matriz associativa e numérico. Portanto a resposta correta é
+
+C: O valor de $linha é
+'Array ([nome]=>Ari [0]=>Ari [email]=>ari@certificamp.com [1]=> ari@certificamp.com ).

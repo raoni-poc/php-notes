@@ -1,0 +1,61 @@
+$db = new mysqli("localhost", "login", "senha", "Globo");
+$db->autocommit(FALSE);
+$db->begin_transaction();
+$db->query("CREATE TABLE Paises (name VARCHAR (255)) ENGINE = InnoDB;");
+$db->query("INSERT INTO Paises VALUES ('Noruega')");
+$db->commit();
+$db->query("INSERT INTO Paises VALUES ('Inglaterra')");
+$db->commit(); $db->savepoint("se_asia");
+$db->query("INSERT INTO Paises VALUES ('Vietnã')");
+$db->commit();
+$db->query("DELETE FROM Paises");
+$db->rollback();
+$db->release_savepoint(" se_asia");
+$db->close();
+
+Qual é o resultado do exemplo de código acima após a execução de $db->close()?
+
+A: As tabelas Noruega e Inglaterra serão adicionados no banco de dados Globo
+B: Os valores Noruega, Inglaterra e Vietnã serão adicionados a uma nova tabela Paises
+C: Todos os valores serão deletados da tabela Paises
+D: Uma nova tabela chamada Paises será criada, cotendo apenas os valores Noruega e Inglaterra
+E: A tabela Paises será excluída do banco de dados Globo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: B
+
+Resposta é B: Os valores Noruega, Inglaterra e Vietnã serão adicionados a uma nova tabela Paises.
+

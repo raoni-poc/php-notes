@@ -1,0 +1,54 @@
+Há como ver a query SQL resultante de uma declaração preparada (prepared stateme nt)?
+
+A: Sim
+B: Não
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: B
+
+Resposta correta é B: Não. A query submetida via prepared statement é tratada a nível de banco de dados,
+portanto não há como inspecionar a query SQL resultante via PHP - exceto com bibliotecas de terceiros.
+
