@@ -1,0 +1,79 @@
+O PHP 7.0 trouxe mudanças significativas no tratamento de erros, principalmente
+relacionado a interface Throwable.
+
+Como está organizada a atual hierarquia de classes interfaces?
+
+A:
+Throwable
+  |
+  |--Error
+          |
+          |--Exception
+
+B:
+Error
+  |
+  |--Throwable
+        |
+        |--Exception
+
+C:
+Throwable
+ |
+ |--Exception
+ |
+ |--Error
+
+D:
+Error
+  |
+  |--Exception
+  |
+  |--Throwable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: C
+
+ Throwable
+  |
+  |--Exception
+  |
+  |--Error
+
+Veja a hierarquia completa em:
+https://gist.github.com/dshafik/4763f5497013745d01b8#file-extension-hierarchy.

@@ -1,0 +1,69 @@
+Das afirmativas abaixo, qual delas é FALSA?
+
+A: Throwable é uma interface interna do PHP
+B: Classes customizadas podem implementar Throwable diretamente
+C: Classes podem estender Error e Exception
+D: Throwable pode ser estendida para adição de novos métodos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: B
+
+
+A alternativa correta é B, pois classes customizadas NÃO podem implementar Throwable diretamente.
+Caso queira estender Throwable é preciso criar uma interface filha que implemente (implements)
+essa primeira interface através da classe filha de Error ou Exception.
+Ex.:
+
+interface MeuThrowable extends Throwable
+{
+  // Customizações
+}7
+
+class MeuErro extends Error implements MeuThrowable
+{
+ // Customizações
+}
