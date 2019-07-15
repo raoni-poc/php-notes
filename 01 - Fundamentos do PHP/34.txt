@@ -1,0 +1,60 @@
+<?='ZCPE'?>
+
+Assinale a alternativa correta:
+
+A: Gera um Parse error, pois não há instr1uções PHP válidas
+B: Gera um Fatal error, pois o bloco PHP não está devidamente delimitado com as tags padrão <?php ... ?>
+C: As "short tags" <? ... ?> devem estar especificadas no php.ini para funcionar
+D: Essa construção é particularmente possível e exibe "ZCPE"
+E: Gera um mensagem do tipo Notice pois considera "ZCPE" como uma constante
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: D
+
+A resposta para essa pergunta é a alternativa D, pois essa construção é possível
+mesmo que a diretiva short_open_tag esteja desligada (Off).
+
+Lembre-se que <?= é uma short tag com echo implícito e está SEMPRE habilitada.

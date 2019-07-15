@@ -6,3 +6,5 @@ echo ", ";
 echo (int) (-7/2);
 echo ", ";
 echo intdiv(7,2);
+echo ", ";
+echo intdiv(-7,2);

@@ -1,0 +1,61 @@
+Quais alternativas abaixo são identificadores válidos? [escolha 3]
+
+A: $1 = "Ari";
+B: $_1 = "Ari";
+C: function object() {}
+D: function 6Pack() {}
+E: function _6Pack() {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R.: B, C, E
+
+A primeira alternativa $1 não é permitida pela variável começar por número,
+tão pouco a alternativa D: function 6Pack() {}.
+
+Todas as demais são corretas, são elas as alternativas: B, C e E.
+Importante lembrar que object não é uma palavra reservada e pode ser utilizado livremente.
+
+
