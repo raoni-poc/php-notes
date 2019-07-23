@@ -1,8 +1,8 @@
-<?='ZCPE'?>
+﻿<?='ZCPE'?>
 
 Assinale a alternativa correta:
 
-A: Gera um Parse error, pois não há instr1uções PHP válidas
+A: Gera um Parse error, pois não há instruções PHP válidas
 B: Gera um Fatal error, pois o bloco PHP não está devidamente delimitado com as tags padrão <?php ... ?>
 C: As "short tags" <? ... ?> devem estar especificadas no php.ini para funcionar
 D: Essa construção é particularmente possível e exibe "ZCPE"

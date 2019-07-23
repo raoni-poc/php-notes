@@ -1,7 +1,7 @@
-
+﻿
 Considere o seguinte trecho de código:
 
-$ resultado = $ valor1 ??? $ valor2;
+$resultado = $valor1 ??? $valor2;
 
 Que operador deve ser usado ao invés do ??? onde a variável
 

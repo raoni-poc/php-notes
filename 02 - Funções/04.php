@@ -8,7 +8,7 @@ exibe();
 echo $nome."\n";
 echo $cidade;
 
-echo "\n----------------\n";
+echo "\n...\n";
 
 $titulo = "ZCPE 5.5";
 function mostrar(){
