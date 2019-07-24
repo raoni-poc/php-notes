@@ -4,7 +4,7 @@ $s = function (){
 };
 echo gettype($s);
 
-echo "\n----------------\n";
+echo "\n...\n";
 
 $mensagem =   "A V I S O";
 $mesagemponto = "!";
@@ -13,7 +13,7 @@ $closure = function ($colega) use ($mensagem, $mesagemponto) {
 };
 $closure("Raoni Sporteman");
 
-echo "\n----------------\n";
+//echo "\n----------------\n";
 
 // callback simples que chama a função certificamp() e passa '7.1' como parâmetro
 // call_user_func(' certificamp', '7.1');

@@ -1,10 +1,11 @@
-
+﻿
 Como permitir passar para uma função um número variável de argumentos?
 A: Usando algo como uma function test() com a função get_variable_args() no corpo da função
 B: Usando algo como function test($parametros[])
 C: Usando algo como function test(... $parameters)
 D: Usando algo como uma functiontest() com a função func_get_args()
-   dentro, no corpo da função E: Isto não é possível em PHP
+   dentro, no corpo da função 
+E: Isto não é possível em PHP
 
 
 
