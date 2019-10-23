@@ -48,8 +48,6 @@ var_dump($sc);
 
 
 
-
-
 /*
  * array_slice( array, offset) que extrai parte do array.
  * O primeiro parâmetro é o array em questão,

@@ -44,3 +44,11 @@ if(0 == null){
 } else {
     echo "Falso";
 }
+
+echo "\n";
+
+if("0"){
+    echo "Verdadeiro";
+} else {
+    echo "Falso";
+}
